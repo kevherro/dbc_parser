@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+message DbcMessage {
+  message Signal {
+    int32 start_bit = 1;
+    int32 bit_length = 2;
+    int32 factor = 3;
+    int32 offset = 4;
+    bool is_signed = 5;
+    int32 minimum = 6;
+    int32 maximum = 7;
+    int32 unit = 8;
+    int32 name = 9;
+
+    // Additional fields for specific signal types
+    bool is_float = 10;
+    repeated EnumValue enum_values = 11;
+  }
+
+  message EnumValue {
+    string name = 1;
+    int32 value = 2;
+  }
+
+  message Message {
+    int32 id = 1;
+    string name = 2;
+    int32 length = 3;
+    repeated Signal signals = 4;
+
+    // Additional fields for multiplexed messages
+    bool is_multiplexed = 5;
+    int32 multiplexer_id = 6;
+  }
+
+  message DbcFile {
+    repeated Message messages = 1;
+  }
+}
