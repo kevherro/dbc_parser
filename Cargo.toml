@@ -1,9 +1,13 @@
 [package]
 name = "dbc_parser"
 version = "0.1.0"
-edition = "2021"
-license-file = "LICENSE.txt"
 authors = ["Kevin Herro kvherro@gmail.com"]
+edition = "2021"
+rust-version = "1.70.0"
+description = "dbc_parser is a library for parsing DBC messages"
+repository = "https://github.com/kevherro/dbc_parser"
+license-file = "LICENSE.txt"
+keywords = ["dbc", "can", "parser-library"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
