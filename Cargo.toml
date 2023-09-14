@@ -3,7 +3,7 @@ name = "dbc_parser"
 version = "0.1.0"
 authors = ["Kevin Herro kvherro@gmail.com"]
 edition = "2021"
-rust-version = "1.70.0"
+rust-version = "1.72.0"
 description = "dbc_parser is a library crate for parsing DBC messages"
 repository = "https://github.com/kevherro/dbc_parser"
 license-file = "LICENSE.txt"
@@ -14,4 +14,4 @@ keywords = ["dbc", "can", "parser-library"]
 [dependencies]
 
 [build-dependencies]
-prost-build = "0.11.9"
+prost-build = "0.12.0"

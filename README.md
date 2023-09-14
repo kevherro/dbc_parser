@@ -6,3 +6,7 @@
 # Introduction
 
 dbc_parser is a library crate for parsing [DBC](http://socialledge.com/sjsu/index.php/DBC_Format) messages.
+
+Prerequisites:
+
+- [protobuf](https://github.com/protocolbuffers/protobuf)
